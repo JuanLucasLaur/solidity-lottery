@@ -1,4 +1,4 @@
-const path = require('ath');
+const path = require('path');
 const fs = require('fs');
 const solc = require('solc');
 
