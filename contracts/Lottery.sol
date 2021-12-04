@@ -17,7 +17,7 @@ contract Lottery {
         return uint(keccak256(block.difficulty, now, players));
     }
     
-    function pickWinner() public restricted {
+    function pickWinner() public {
         require(msg.sender == manager);
 
         uint index = random() % players.length;
