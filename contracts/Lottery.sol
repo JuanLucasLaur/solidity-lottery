@@ -12,7 +12,7 @@ contract Lottery {
 
     function enter() public payable {
         require(msg.value > 0.001 ether);
-        players.push(msg.sender);
+        players.push(payable(msg.sender));
     }
 
     function random() private view returns (uint) {
