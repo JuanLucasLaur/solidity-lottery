@@ -15,7 +15,7 @@ const input = {
     settings: {
         outputSelection: {
             '*': {
-                '*': ['*']
+                '*': ['abi', 'evm.bytecode']
             }
         }
     }
